@@ -1,0 +1,52 @@
+name: "Bug Report: Discover Deep Cove"
+description: Found an issue with Discover Deep Cove? Create a bug report to help us improve.
+title: "[Bug]: "
+labels: ["discover-deep-cove", "bug", "needs-review"]
+assignees:
+  - mitchellq
+  - jacksos101
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This bug report form is for our Android Application. If you need to report an issue with our website, please use the website bug report form.
+  - type: markdown
+    attributes:
+      value: |
+        *The details you provide here are public. If you need to send us confidential information, please send an email to office@deepcovehostel.co.nz*
+  - type: input
+    id: version
+    attributes:
+      label: Phone and Android OS Version
+      description: What is the model of your phone and what version of Android are you using?
+      placeholder: ex. Samsung A50 - Android 10
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe What happened?
+      description: Please describe the bug and what you expected to happen
+    validations:
+      required: true
+  - type: dropdown
+    id: reproduce
+    attributes:
+      label: Can you reproduce the error?
+      options:
+        - Yes (Always)
+        - Yes (Most of the time)
+        - Only Sometimes
+        - No
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: If you answered "Yes" above please describe the steps to reproduce the error
+  - type: textarea
+    id: other
+    attributes:
+      label: Do you have any other comments or feedback?
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we contact you if we need more info?
+      placeholder: ex. email@example.com      
